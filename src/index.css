@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #002743;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cus-container {
+    @apply container max-w-[90rem] px-[15px] md:px-[80px] lg:px-[135px] mx-auto;
+  }
+  /* {Grid Responsive Columns}  */
+  .grid-res-cols {
+    @apply grid grid-cols-4 items-center justify-between gap-[1.875rem] lg:grid-cols-12;
+  }
+  /* / If number of card is 2 / */
+  .grid-card-2 {
+    @apply col-span-4 lg:col-span-6;
+  }
+  /* / If number of card is 3 / */
+  .grid-card-3 {
+    @apply col-span-4 lg:col-span-4;
+  }
+  /* / If number of card is 4 / */
+  .grid-card-4 {
+    @apply col-span-4 lg:col-span-3;
+  }
+  .grid-card-footer-4 {
+    @apply col-span-4 md:col-span-2 lg:col-span-3;
+  }
+  .heading-text {
+    @apply text-[28px] md:text-[36px] lg:text-[44px] font-bold font-raleway;
+  }
+  .para-text {
+    @apply text-[14px] md:text-[16px] font-normal font-inter;
+  }
+  .bg-cyan-700 {
+    @apply !bg-transparent;
+  }
+
+  .cus-card {
+    border-right: 1px solid #081c4f;
+    border-bottom: 1px solid #081c4f;
+    background: linear-gradient(
+      126deg,
+      rgba(7, 16, 38, 0.1) 2.37%,
+      rgba(7, 16, 38, 0.1) 46.06%,
+      rgba(0, 70, 251, 0.1) 97.09%
+    );
+  }
+
+  .cus-bg{
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(239, 239, 239, 0.06) 0%, rgba(250, 249, 247, 0.00) 100%);
+  }
+  .card-bg{
+    border-radius: 16px;
+    border: 1px solid var(--DarkOverlayElement-DO20, rgba(255, 255, 255, 0.20));
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.08) 6.01%, rgba(255, 255, 255, 0.17) 90.83%);
+  }
+  .product-bg{
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .footer-bg{
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%);
+  }
+}
