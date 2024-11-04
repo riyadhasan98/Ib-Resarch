@@ -36,13 +36,13 @@ function Navbar() {
                   <a href="#">Home</a>
                 </li>
                 <li className="hover:text-gray-300 font-inter">
-                  <a href="#">Movies</a>
+                  <a href="#">Service</a>
                 </li>
                 <li className="hover:text-gray-300 font-inter">
-                  <a href="#">Tv Shows</a>
+                  <a href="#">About Us</a>
                 </li>
                 <li className="hover:text-gray-300 font-inter">
-                  <a href="#">Sports</a>
+                  <a href="#">Testimonial</a>
                 </li>
               </ul>
             </div>
@@ -58,7 +58,6 @@ function Navbar() {
                 <Dropdown.Item>Germany</Dropdown.Item>
                 <Dropdown.Item>France</Dropdown.Item>
                 <Dropdown.Item>Chiness</Dropdown.Item>
-                
               </Dropdown>
             </div>
           </div>
